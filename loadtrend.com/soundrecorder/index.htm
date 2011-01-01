@@ -4,282 +4,379 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="DESCRIPTION" content="Sound recorder: Windows Audio Recorder - Capture and record audio from the Internet,audio files or live streams.">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
 <meta name="KEYWORDS" content="record streaming audio,sound recording software,sound recorder software,audio recorder,vista sound recorder,record,recorder,recording,soud recorder,voice,record music,mp3 recorder,wave recorder,cd recorder">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Sound recorder: Windows Audio Recorder - Capture and record audio from the 
-Internet,audio files or live streams.</title>
+<title>Sound recorder: Windows Audio Recorder - Capture and record audio from the Internet, audio files or live streams.</title>
 <style>
+    /* Centering a design using auto margins. */
+    body {
+		text-align: center; /* For IE6 bug, page 135. */
+		margin: 0 auto;
+	}
 
-.link_txt_001 { font-size: 10pt; font-family: Tahoma; font-weight: bold; line-height: 200% }
-.timesnew    { font-family: Times New Roman; line-height: 150%; font-size: 10pt }
-.txt_003     { font-family: Times New Roman; font-size: 12pt; line-height: 150% }
-.link_txt_002 { font-family: Book Antiqua; font-size: 12pt; font-weight: bold; line-height: 
-               200% }
-           
-.link_001    { color: #000000; text-decoration: none; font-family: Times New Roman; 
-               font-size: 12pt; font-weight: bold; line-height: 150% }
-.link_001:hover {  color: #ffffff; text-decoration: none; font-family: Times New Roman; 
-               font-size: 12pt; font-weight: bold;line-height: 150%}
+    #page {
+		width: 85%;
+		margin: 0 auto; /* means top left here.*/
+		border: 0px;
+		text-align: left; /* For IE6 bug, page 135. */
+	}
+	
+	/* This is all about page header stuffs. */
+	#page #header {
+		border: 0px;
+		height: 100px;
+		background: #6888E0 url(images/123-1.jpg) no-repeat left top;
+		color: #fff;
+		font-family: Tahoma;
+		font-size: small;
+		font-weight: bold;
+		position: relative;
+		border-bottom: 1px solid #B1C2EF;
+	}
+	
+	#page #header #title {
+		position: absolute;
+		top: 5px;
+		right: 50px;
+	}
+	
+	#page #header #copy_at {
+		position: absolute;
+		top: 35px;
+		right: 50px;
+	}
+	
+	/* Creating a horizontal nav bar. */
+	ul#horizontal_nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 100%; /* The horizontal nav bar is 100% width. */
+		float: left; /* Because children li below is float, witout this clause, parent ul here can not contain floated children so that hidding the list background. */
+		/*
+		background: #FAA819 url(images/left_navBg.gif) repeat-x;
+		*/
+		position: absolute;
+		bottom: 5px;
+		left: 10px;
+	}
+	ul#horizontal_nav li {
+		float: left;
+	}
+	ul#horizontal_nav a {
+		padding: 0 1em;
+		text-decoration: none;
+		color: #fff;
+	}
+	ul#horizontal_nav a:hover {
+		color: #333; /* Define the rollover state. */
+	}
+	
+	/* For float: left above. */
+	.clear {
+		clear: both;
+	}
+	
+	/* This is all about left navigator. */
+	#page #left_nav {
+		width: 30%;
+		float: left;
+		padding-top: 40px;
+		background: #6888E0;
+	}
+	#left_nav ul {
+		margin: 0;
+		padding: 0;
+		list-style:none;
+		width: 100%; /* The horizontal nav bar is 100% width. */
+	}
+	#left_nav li {
+		/* For the HORIZONTAL, add horizontal padding to the navigation area's content not navigation itself. Or IE 5.x it's not ok.*/
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 40px;
+		border-top: #B1C2EF solid 1px;
+	}
+	#left_nav li a {
+		display: block;
+		font-family: Arial;
+		font-size: medium;
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+		line-height: 40px; /* line-height = li.height means vertical middle. */
+	}
+	#left_nav li a:hover {
+		color: #fff;
+	}
+	#left_nav li#home {
+		background: #7795E3;
+	}
+	#left_nav li#new {
+		background: #83A3E4;
+	}
+	#left_nav li#download {
+		background: #87A9EF;
+	}
+	#left_nav li#buynow {
+		background: #94B1EF;
+	}
+	#left_nav li#faq {
+		background: #98B4F0;
+	}
+	#left_nav li#contact {
+		background: #A3BBEF;
+	}
+	#left_nav li#tail {
+		background: #B1C2EF;
+	}
+
+	
+	/* This is all about page content stuffs. */
+	#page #content {
+		/* The plus of width of content and left_nav equals 69% + 30% = 99% while page is 100%, so there is a 1% virtual gutter.
+		We use this method rather than horizontal margin or padding to create gutters because of IE bugs.
+		*/
+		width: 69%;
+		float: right;
+		font-family: Times New Roman;
+		font-size: medium;
+		border-right: #B1C2EF solid 2px;
+	}
+	
+	#page #content .con_title {
+		background-color: #009838;
+		color: #fff;
+		font-weight: bold;
+		line-height: 34px;
+		padding-left: 15px;
+		margin: 0;
+	}
+	
+	#page #content .red_text {
+		color: #ff0000;
+		font-weight: bold;
+	}
+	
+	#page #content .red_text a {
+		color: #ff0000;
+	}
+	
+	#page #content .blue_text {
+		color: #0000ff;
+		font-weight: bold;
+	}
+	
+	#page #content .blue_text a {
+		color: #ff0000;
+	}
+	
+	/* This is all about page footer stuffs. */
+	#page #footer {
+		clear: both;
+		background: #6888E0;
+		color: #fff;
+		font-family: Tahoma;
+		font-size: small;
+		font-weight: bold;
+		line-height: 30px;
+	}
 </style>
-<SCRIPT language="Javascript">
-<!--- hide script from old browsers
-  var accountID = "117838037";
-  var referrer = document.referrer;
-  var referrerUrlSplit = referrer.split("/");
-  var referrerDomain = referrerUrlSplit[2];
-  var localUrl = location.href;
-  var localUrlSplit = localUrl.split("/");
-  var localDomain = localUrlSplit[2];
-  var localDomainSplit = localDomain.split(".");
-  var topLevelDomain = localDomainSplit[localDomainSplit.length-2] + "." + localDomainSplit[localDomainSplit.length-1];
-  if (referrer!="" && referrerDomain.indexOf(topLevelDomain)<0)
-  {
-      var img = new Image();
-      img.src = "//secure.emetrix.com/track.asp?ref=" + escape(referrer) + "&site=" + escape(localUrl) + "&accountID=" + accountID;
-  }
-//-->
-</SCRIPT>
+
+<style type="text/css">
+	#introduce div {
+		margin: 15 0 20 0;
+	}
+	#introduce div#intro_desc {
+		margin-bottom: 0;
+	}
+	#introduce div#intro_example {
+		margin-top: 20;
+	}
+	/* Replace the default bullet image with custom one, and remove indent. */
+	#introduce div#intro_example ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none; /* Get rid of default bullet image. */
+	}
+	#introduce div#intro_example ul li {
+		background: url(images/jiantou.gif) no-repeat 0 50%;
+		padding-left: 20px;
+		margin: 15px;
+	}
+	#introduce div#screenshots {
+		margin-bottom: 0;
+	}
+	#introduce div#screenshots a {
+		margin: 0px 20px 0px 0px;
+	}
+	#key_features p {
+		margin: 5px 0 0 0;
+	}
+	#key_features div {
+		margin: 15px 0 0 0;
+	}
+	div#links {
+		margin: 15px 0 30px 0;
+	}
+</style>
+
+
 </head>
 
-<body topmargin="0" leftmargin="0">
-
-<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#6888E0">
-  <tr>
-    <td width="33%" valign="top">
-	<img border="0" src="images/123-1.jpg" width="249" height="58"></td>
-    <td width="67%" valign="top"><font face="Times New Roman" color="#ffffff" size="2"><b><span id="donotprint">Capture  
-      and record audio from the Internet, audio files or live streams.</span></b></font> 
-      <p align="center"><FONT face="Times New Roman" color=#ffffff size=2><B><SPAN id=pgFooter1>&copy; 2001 - 2010 </SPAN>Windows Audio Recorder designed by Loadtrend, Inc., all rights reserved<O:P> &nbsp;<br>        
-      &nbsp;</B></FONT></p> 
-    </td> 
-  </tr> 
-  <tr> 
-    <td width="100%" colspan="2"> 
-      <p class="link_txt_001" align="left"><font face="Arial"><FONT size=2><FONT  
-      color=#ffffff><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </B></FONT><a href="index.htm"><B><FONT  
-      color=#ffffff>Windows Audio Recorder Home</FONT></B></a><B><FONT color=#ffffff>&nbsp;        
-      |&nbsp; </FONT><a href="new.htm"><FONT        
-      color=#f1f1f1>What's new</FONT></a><FONT color=#ffffff>&nbsp; |&nbsp;        
-      </FONT><a href="download.htm"><FONT  
-      color=#f1f1f1>Free Download</FONT></a><FONT color=#ffffff>&nbsp; |&nbsp;        
-      </FONT></B></FONT><B><a href="buynow.htm"><FONT color=#f1f1f1  
-      size=2>Buy Now&nbsp;</FONT></a><FONT size=2> <FONT        
-      color=#ffffff>|</FONT>&nbsp; </FONT><a href="faq.htm"><FONT color=#f1f1f1  
-      size=2>FAQ</FONT></a><FONT size=2>&nbsp; <FONT        
-      color=#ffffff>|&nbsp;</FONT> </FONT><a href="contact.htm"><FONT color=#f1f1f1  
-      size=2>Contact Us</FONT> </a></B></font></p>        
-    </td> 
-  </tr> 
-</table> 
- 
-<table border="0" width="100%" cellspacing="0" cellpadding="0"> 
-  <tr> 
-    <td width="100%"></td> 
-  </tr> 
-</table> 
-<table border="0" width="100%" bordercolorlight="#000000" cellspacing="0" cellpadding="0"> 
-  <tr> 
-    <td width="26%" bgcolor="#B1C2EF" valign="top"> 
-      <table border="0" width="100%" cellspacing="1" cellpadding="8"> 
-        <tr> 
-          <td width="100%" bgcolor="#6888E0" align="left" height="20"><font size="3"></font></td>
-        </tr>
-        <tr>
-          <td width="100%" bgcolor="#7795E3" align="left" class="link_001">
-            <p class="link_001"><a href="index.htm" class="link_001"><font face="Times New Roman" size="3">Windows Audio Recorder Home</font></a></p>   
- </td> 
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#83A3E4" align="left" class="link_001"><a href="new.htm" class="link_001"><font face="Times New Roman" size="3">What's new</font></a></td>  
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#87A9EF" align="left" class="link_001"><a href="download.htm" class="link_001"><font face="Times New Roman" size="3">Free Download</font></a> </td>  
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#94B1EF" align="left" class="link_001"><a href="buynow.htm" class="link_001"><font face="Times New Roman" size="3">Buy Now</font></a> </td>  
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#98B4F0" align="left" class="link_001"><a href="faq.htm" class="link_001"><font face="Times New Roman" size="3">Windows Audio Recorder FAQ</font></a> </td>  
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#A3BBEF" align="left" class="link_001"><a href="contact.htm" class="link_001"><font face="Times New Roman" size="3">Contact Us &amp; Comments</font></a></td>   
-        </tr> 
-        <tr> 
-          <td width="100%" class="link_001"><font size="3"></font>
-            <p></p>
-            <p><font face="Times New Roman" size="3">&nbsp;</font></td>
-        </tr>
-      </table>
-    </td>
-    <td width="74%" valign="top">
-      <table border="0" width="100%" cellspacing="1" cellpadding="0" bgcolor="#B0C4F0">
-        <tr>
-          <td width="100%" height="34" bgcolor="#009838"><B><FONT face="Times New Roman" color=#ffffff 
-                        size=3>&nbsp;&nbsp; </FONT><font size="3" color="#FFFFFF" face="Times New Roman"><FONT face="Times New Roman"> </FONT>Windows Audio Recorder       
-                  Introduce</font></B></td> 
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#FFFFFF"> 
-            <table border="0" width="100%" cellspacing="3" cellpadding="3"> 
-              <tr> 
-                <td width="100%"> 
-                  <p class="txt_003"><font face="Times New Roman" color="#ff0000" size="3"><a style="font-family: Book Antiqua; font-weight: bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </a></font><a href="download.htm" style="font-family: Book Antiqua; font-weight: bold"><font face="Times New Roman" color="#ff0000" size="3">Windows Audio Recorder      
-				  4.55 ( New!&nbsp; 10-08-2010 ) is now </font></a>
-		          <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font face="Times New Roman" color="#ff0000" size="3">FULLY SUPPORT Windows Vista / Windows XP Media Center Operation System!</font></b><br>
-		          <font size="3"><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font face="Times New Roman">Windows Audio Recorder is a sound recording program with built-in sound editor. It records sound generated, or requested, by other computer programs, such as RealPlayer, Windows Media Player, Quick Time,WinAmp, and many others. The resulting files are saved in wave-file ,     
-                  <font color="#FF0000" size="3"><b> MP3-file</b></font> format. And it can edit audio files by cutting, copying, pasting, trimming.&nbsp;</font><img border="0" src="images/co.jpg" align="right" width="116" height="110"><font face="Times New Roman"><br>    
-                  &nbsp;&nbsp;&nbsp;&nbsp;<br> 
-                  <font color="#FF0000"><b>For example</b></font>, you can use Windows Audio Recorder to record:&nbsp;<br>    
-                  &nbsp;<br> 
-                  <img border="0" src="images/jiantou.gif" width="10" height="10">  
-                  Audio from the Internet, either audio files or live streams.<br>     
-                  &nbsp;<br> 
-                  <img border="0" src="images/jiantou.gif" width="10" height="10">  
-                  A conversation, if you use an Internet telephony program.<br>     
-                  &nbsp;<br> 
-                  <img border="0" src="images/jiantou.gif" width="10" height="10">  
-                  Music from a game program.<br>     
-                  &nbsp;<br>
-				  <img border="0" src="images/jiantou.gif" width="10" height="10">  
-                  Edit recording files or existing audio files.
-				  <a href="buynow.htm"><img border="0" src="images/purchase.gif" align="right" width="116" height="39"></a><br><br>
-                  <!-- <a href="images/war.gif"><font color="red">Click here to see screenshot.</font></a><br>
-				  -->
-				  <a href="images/war.gif"><IMG SRC="images/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-				  <a href="images/warp.gif"><IMG SRC="images/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-
-				  </font></font></td>    
-              </tr> 
-            </table> 
-          </td> 
-        </tr> 
-        <tr> 
-          <td width="100%" bgcolor="#009838" height="34"><b><font color="#ffffff" size="3">&nbsp;</font><font size="3" color="#FFFFFF" face="Times New Roman">Key 
-            Features</font></b></td>
-        </tr>
-        <tr>
-          <td width="100%" bgcolor="#FFFFFF">
-            <table border="0" width="100%" cellspacing="3" cellpadding="3">
-              <tr>
-                <td width="100%" class="txt_003"><b><font color="#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <font face="Times New Roman" size="3">An intelligent recorder<br>     
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font> </font></b><font face="Times New Roman" size="3"><span lang="EN-US" style="font-size:12.0pt;font-family:
-&quot;Times New Roman&quot;;mso-fareast-font-family:&#23435;&#20307;;color:black;mso-ansi-language:
-EN-US;mso-fareast-language:HE;mso-bidi-language:HE">When you first start
-                  Windows Audio Recorder, Windows Audio Recorder will configure your sound card
-                  automatically.&nbsp;&nbsp; Just obey the prompts carefully.
-                  Then you can record what ever you like from your sound card.
-                  You do not have to set configuration manually. This is the
-                  major difference between Windows Audio Recorder and other sound recording
-                  tools.</span>     
-                  </font>     
-				  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><font color="#0000FF">Real time MP3 encoding</font></b><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; That means it will not occupy your memory when recording, once Windows Audio Recorder captured sound, it then encode the audio data to mp3 and write to disk directly, no temporary file production, not occupy your memory resouce.  
-				  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><font color="#0000FF">Noise Gating Setting</font></b><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows Audio Recorder can detect the sound volume automaticly, once the recording volume is lower than a specified value for some time, it then pause recording until the sound loudly once again, that means, you can get rid of the silence duration in your recording, as you like.  
-				  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#0000FF"><b>Built-in Sound Editor<font color="#FF0000"><b>  New !</b></font></b></font><br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-size:12.0pt;font-family:
-&quot;Times New Roman&quot;;mso-fareast-font-family:&#23435;&#20307;;color:black;mso-ansi-language:
-EN-US;mso-fareast-language:HE;mso-bidi-language:HE">Now this sound recorder is not only a recorder, it is also a sound editor that allows the user to edit recording or existing audio files by cutting, copping, pasting, trimming any duration of the sound. Also these actions are visual, and support unlimited Undo (and Redo). </span></font></p> 
-                  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#0000FF"><b>Recording management</b></font>  
-                  <font color="#FF0000"><b>  New !</b></font><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-size:12.0pt;font-family:
-&quot;Times New Roman&quot;;mso-fareast-font-family:&#23435;&#20307;;color:black;mso-ansi-language:
-EN-US;mso-fareast-language:HE;mso-bidi-language:HE">The Resulting File list box
-                  lets you manage your file recording easily. You can set the
-                  recording information and edit the resulting file with a
-                  simple mouse click on the list box.&nbsp;</span><b><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;
-mso-fareast-font-family:&#23435;&#20307;;mso-ansi-language:EN-US;mso-fareast-language:HE;
-mso-bidi-language:HE"><a href="new.htm"><span style="color:red">Click
-                  here</span></a></span></b><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
-&#23435;&#20307;;color:black;mso-ansi-language:EN-US;mso-fareast-language:HE;mso-bidi-language:
-HE"> to learn more.</span>&nbsp;</font></p> 
-                  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><font color="#0000FF">Sampling settings</font></b><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows Audio Recorder supports Sampling settings. To get higher quality recording, you can set the Sample rate, Mono or Stereo, and the Sample Bit, before recording. With its powerful sound engine,
-                  Recorder produces recordings with  
-                  <font color="#FF0000"><b> CD quality</b></font>.&nbsp;</font></p> 
-                  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#0000FF"><b>Audio Conversion</b></font><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-size:12.0pt;font-family:
-&quot;Times New Roman&quot;;mso-fareast-font-family:&#23435;&#20307;;color:black;mso-ansi-language:
-EN-US;mso-fareast-language:HE;mso-bidi-language:HE">Don't worry about high
-                  quality recording taking a great deal of disk space.
-                  Windows Audio Recorder can convert wave-file format into Mp3-file format,
-                  which will reduce the file size by a factor of about 10.</span></font></p> 
-                  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#0000FF"><b>Recording schedule support</b></font><br>  
-
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now Windows Audio Recorder supports recording schedule function. You can define all kinds of schedules for specified date, daily, weekly date, when to start recording or when to stop recording, also define a internet live radio url to record. Windows Audio Recorder will connect the url automaticly and record the content.&nbsp;<br> 
-		  </font></p>
-                  <p><font face="Times New Roman" size="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#0000FF"><b>Supports Hotkeys</b></font><br>  
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are a number of hotkeys which allow you to control the recording functions of Windows Audio Recorder while you are working in other programs.&nbsp;<br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000"><b>  
-                  F5</b></font> - START RECORDING&nbsp;<br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                  <font color="#FF0000"><b>F6</b></font> - PAUSE / RESUME&nbsp;<br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                  <font color="#FF0000"><b>F7</b></font> - STOP&nbsp;<br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                  <font color="#FF0000"><b>F8</b></font> - PLAYBACK&nbsp;<br> 
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-size:12.0pt;font-family:
-&quot;Times New Roman&quot;;mso-fareast-font-family:&#23435;&#20307;;mso-font-kerning:1.0pt;mso-ansi-language:
-EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA">For example, you can
-                  start Windows Audio Recorder first and then run other computer programs.
-                  It’s not necessary to switch to Windows Audio Recorder to start, stop
-                  or pause a recording. </span><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
-&#23435;&#20307;;mso-ansi-language:EN-US;mso-fareast-language:HE;mso-bidi-language:HE">This
-                  means it will not be a bother for you&nbsp; to switch to
-                  Windows Audio Recorder to record sound when you are enjoying music or
-                  live streams. </span><span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:
-&#23435;&#20307;;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;
-mso-bidi-language:AR-SA">All you need to do is to press F5 to record directly.</span> 
-                  </font> 
-                  <p>  
-                </td> 
-              </tr> 
-              <tr>
-                <td width="100%" class="txt_003" bgcolor="#009838"><font face="Times New Roman" color="#FFFFFF"><b>Links:</b></font>  
-                </td> 
-              </tr>
-              <tr>
-                <td width="100%" class="txt_003"><br>
-				<font size="3"> <b><font color="#0000FF">
-				<a href="http://www.loadtrend.com/realspy/">Real
-                  Spy Monitor</a></font></b>-Powerful spy-monitoring-security
-                  tool, record all your PC actions in stealth, </font><font size="3" face="Times New Roman">spy on your employees at work
-                  and children or family at home</font><p>
-				<font size="3" face="Times New Roman"><b>
-				<a href="http://www.loadtrend.com/dvd/"><font color="#0000FF">Joy
-                  DVD Ripper</font></a></b>-Compress and backup DVDs to DIVX,
-                  AVI and MPEG format.&nbsp;</font> 
-                  </p>
-				<p>&nbsp;</td> 
-              </tr>
-            </table> 
-          </td> 
-        </tr> 
-      </table> 
-    </td> 
-  </tr> 
-</table> 
- 
-<table border="0" width="100%" bgcolor="#6084D8" cellspacing="0" cellpadding="0"> 
-  <tr> 
-    <td width="100%"> 
-      <p style="line-height: 200%"><font face="Times New Roman" color="#ffffff" size="2"><b><span id="pgFooter0">&copy;  
-      2001 - 2010 </span>Windows Audio Recorder designed by Loadtrend, Inc., all rights reserved<O:P> 
-      </b></font></td> 
-  </tr> 
-</table> 
-
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-1933970-1";
-urchinTracker();
-</script>
-
+<body>
+	
+	<!-- Liquid layouts, dimentions are set using percentages instead of pixels. -->
+	<div id="page">
+		<div id="header">
+			<div id="title"> Capture and record audio from the Internet, audio files or live streams. </div>
+			<div id="copy_at"> &copy; 2001 - 2011 Windows Audio Recorder designed by Loadtrend, Inc., all rights reserved. </div>
+			<ul id="horizontal_nav">
+				<li> <a href="index.htm"> Windows Audio Recorder Home </a> | </li>
+				<li> <a href="new.htm"> What's new </a> | </li>
+				<li> <a href="download.htm"> Free Download </a> | </li>
+				<li> <a href="buynow.htm"> Buy Now </a> | </li>
+				<li> <a href="faq.htm"> FAQ </a> | </li>
+				<li> <a href="contact.htm"> Contact Us </a> </li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div id="left_nav">
+			<ul>
+				<li id="home"> <a href="index.htm"> Windows Audio Recorder Home </a> </li>
+				<li id="new"> <a href="new.htm"> What's new </a> </li>
+				<li id="download"> <a href="download.htm"> Free Download </a> </li>
+				<li id="buynow"> <a href="buynow.htm"> Buy Now </a> </li>
+				<li id="faq"> <a href="faq.htm"> FAQ </a> </li>
+				<li id="contact"> <a href="contact.htm"> Contact Us &amp; Comments </a> </li>
+				<li id="tail"> </li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="introduce">
+    			<div class="con_title">Windows Audio Recorder Introduce</div>
+    			<div class="red_text"><a href="download.htm">Windows Audio Recorder 4.55 ( New!&nbsp; 10-08-2010 ) is now !</a></div>
+    			<div class="red_text">FULLY SUPPORT Windows Vista / Windows XP Media Center Operation System!</div>
+    			<div id="intro_desc">
+    				Windows Audio Recorder is a sound recording program with built-in sound editor. It records sound generated, or requested, by other computer programs,
+    			such as RealPlayer, Windows Media Player, Quick Time,WinAmp, and many others. The resulting files are saved in wave-file, <span class="red_text">MP3-file</span>
+    			format. And it can edit audio files by cutting, copying, pasting, trimming.
+    			</div>
+    			<img border="0" src="images/co.jpg" align="right" width="116" height="110">
+    			<div id="intro_example">
+                    <span class="red_text">For example</span>, you can use Windows Audio Recorder to record:
+					<ul>
+						<li>Audio from the Internet, either audio files or live streams.</li>
+						<li>A conversation, if you use an Internet telephony program.</li>
+						<li>Music from a game program.</li>
+						<li>Edit recording files or existing audio files.</li>
+						<li>Convert Mp3 <-> Wav.</li>
+					</ul>
+    			</div>
+    			<div id="screenshots">
+        			<a href="images/war.gif"><IMG SRC="images/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+        			<a href="images/warp.gif"><IMG SRC="images/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+        			<a href="buynow.htm"><img border="0" src="images/purchase.gif" align="right" width="116" height="39"></a><br><br>
+    			</div>
+			</div>
+			<div id="key_features">
+    			<div class="con_title">Key Features</div>
+				<div>
+					<p class="blue_text">An intelligent recorder</p>
+					<p>
+						When you first start Windows Audio Recorder, Windows Audio Recorder will configure your sound card automatically. Just obey the prompts carefully.
+                        Then you can record what ever you like from your sound card. You do not have to set configuration manually. This is the major difference between Windows Audio Recorder
+						and other sound recording tools.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Real time MP3 encoding</p>
+					<p>
+						That means it will not occupy your memory when recording, once Windows Audio Recorder captured sound, it then encode the audio data to mp3 and write to disk directly,
+						no temporary file production, not occupy your memory resouce.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Noise Gating Setting</p>
+					<p>
+						Windows Audio Recorder can detect the sound volume automaticly, once the recording volume is lower than a specified value for some time, 
+						it then pause recording until the sound loudly once again, that means, you can get rid of the silence duration in your recording, as you like.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Built-in Sound Editor <span class="red_text">New !</span></p>
+					<p>
+						Now this sound recorder is not only a recorder, it is also a sound editor that allows the user to edit recording or existing audio files by 
+						cutting, copping, pasting, trimming any duration of the sound. Also these actions are visual, and support unlimited Undo (and Redo).
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Recording management <span class="red_text">New !</span></p>
+					<p>
+						The Resulting File list box lets you manage your file recording easily.
+						You can set the recording information and edit the resulting file with a simple mouse click on the list box.
+						<span class="red_text"><a href="new.htm">Click here</a></span> to learn more.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Sampling settings </p>
+					<p>
+						Windows Audio Recorder supports Sampling settings. To get higher quality recording, you can set the Sample rate, Mono or Stereo, and the Sample Bit, before recording.
+						With its powerful sound engine, Recorder produces recordings with <span class="red_text">CD quality</span>.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Audio Conversion</p>
+					<p>
+						Don't worry about high quality recording taking a great deal of disk space.
+						Windows Audio Recorder can convert wave-file format into Mp3-file format, which will reduce the file size by a factor of about 10.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Recording schedule support</p>
+					<p>
+						Now Windows Audio Recorder supports recording schedule function. You can define all kinds of schedules for specified date, daily, weekly date, 
+						when to start recording or when to stop recording, also define a internet live radio url to record.
+						Windows Audio Recorder will connect the url automaticly and record the content.
+					</p>
+				</div>
+				<div>
+					<p class="blue_text">Supports Hotkeys</p>
+					<p>
+						There are a number of hotkeys which allow you to control the recording functions of Windows Audio Recorder while you are working in other programs.
+					</p>
+					<ul>
+    					<li><span class="red_text">F5</span>  - START RECORDING </li>
+    					<li><span class="red_text">F6</span>  - PAUSE / RESUME </li>
+    					<li><span class="red_text">F7</span>  - STOP </li>
+    					<li><span class="red_text">F8</span>  - PLAYBACK </li>
+					</ul>
+					<p>
+						For example, you can start Windows Audio Recorder first and then run other computer programs. 
+						It's not necessary to switch to Windows Audio Recorder to start, stop or pause a recording.
+						This means it will not be a bother for you to switch to Windows Audio Recorder to record sound when you are enjoying music or live streams.
+						All you need to do is to press F5 to record directly.
+					</p>
+				</div>
+			</div>
+			<div id="links">
+    			<div class="con_title">Links:</div>
+				<p>
+					<span class="blue_text"><a href="http://www.loadtrend.com/realspy/">Real Spy Monitor</a></span> - Powerful spy-monitoring-security tool, record all 
+					your PC actions in stealth, spy on your employees at work and children or family at home
+				</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="copy_at"> &copy; 2001 - 2011 Windows Audio Recorder designed by Loadtrend, Inc., all rights reserved. </div>
+		</div>
+	</div>
+	
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-1933970-1";
+        urchinTracker();
+    </script>
+	
 </body> 
- 
+
 </html> 
