@@ -76,11 +76,25 @@
 		clear: both;
 	}
 	
+	/* wrapper div for left_nav & content divs. */
+	#page #main_wrapper {
+		overflow:hidden; /* For two-column fixed height. */
+	}
+	
+	/* For two-column fixed height. */
+	#main_wrapper #left_nav, #main_wrapper #content {
+		margin-bottom: -10000px; 
+		padding-bottom: 10000px;
+	}
+	
 	/* This is all about left navigator. */
 	#page #left_nav {
 		width: 30%;
 		float: left;
-		padding-top: 40px;
+		background: #B1C2EF;
+	}
+	#left_nav #left_nav_head {
+		height: 40px;
 		background: #6888E0;
 	}
 	#left_nav ul {
@@ -126,10 +140,7 @@
 	#left_nav li#contact {
 		background: #A3BBEF;
 	}
-	#left_nav li#tail {
-		background: #B1C2EF;
-	}
-
+	
 	
 	/* This is all about page content stuffs. */
 	#page #content {
@@ -240,131 +251,133 @@
 			</ul>
 			<div class="clear"></div>
 		</div>
-		<div id="left_nav">
-			<ul>
-				<li id="home"> <a href="index.htm"> Windows Audio Recorder Home </a> </li>
-				<li id="new"> <a href="new.htm"> What's new </a> </li>
-				<li id="download"> <a href="download.htm"> Free Download </a> </li>
-				<li id="buynow"> <a href="buynow.htm"> Buy Now </a> </li>
-				<li id="faq"> <a href="faq.htm"> FAQ </a> </li>
-				<li id="contact"> <a href="contact.htm"> Contact Us &amp; Comments </a> </li>
-				<li id="tail"> </li>
-			</ul>
-		</div>
-		<div id="content">
-			<div id="introduce">
-    			<div class="con_title">Windows Audio Recorder Introduce</div>
-    			<div class="red_text"><a href="download.htm">Windows Audio Recorder 4.55 ( New!&nbsp; 10-08-2010 ) is now !</a></div>
-    			<div class="red_text">FULLY SUPPORT Windows Vista / Windows XP Media Center Operation System!</div>
-    			<div id="intro_desc">
-    				Windows Audio Recorder is a sound recording program with built-in sound editor. It records sound generated, or requested, by other computer programs,
-    			such as RealPlayer, Windows Media Player, Quick Time,WinAmp, and many others. The resulting files are saved in wave-file, <span class="red_text">MP3-file</span>
-    			format. And it can edit audio files by cutting, copying, pasting, trimming.
+		<div id="main_wrapper">
+    		<div id="left_nav">
+    			<div id="left_nav_head"></div>
+    			<ul>
+    				<li id="home"> <a href="index.htm"> Windows Audio Recorder Home </a> </li>
+    				<li id="new"> <a href="new.htm"> What's new </a> </li>
+    				<li id="download"> <a href="download.htm"> Free Download </a> </li>
+    				<li id="buynow"> <a href="buynow.htm"> Buy Now </a> </li>
+    				<li id="faq"> <a href="faq.htm"> FAQ </a> </li>
+    				<li id="contact"> <a href="contact.htm"> Contact Us &amp; Comments </a> </li>
+    			</ul>
+    		</div>
+    		<div id="content">
+    			<div id="introduce">
+        			<div class="con_title">Windows Audio Recorder Introduce</div>
+        			<div class="red_text"><a href="download.htm">Windows Audio Recorder 4.55 ( New!&nbsp; 10-08-2010 ) is now !</a></div>
+        			<div class="red_text">FULLY SUPPORT Windows Vista / Windows XP Media Center Operation System!</div>
+        			<div id="intro_desc">
+        				Windows Audio Recorder is a sound recording program with built-in sound editor. It records sound generated, or requested, by other computer programs,
+        			such as RealPlayer, Windows Media Player, Quick Time,WinAmp, and many others. The resulting files are saved in wave-file, <span class="red_text">MP3-file</span>
+        			format. And it can edit audio files by cutting, copying, pasting, trimming.
+        			</div>
+        			<img border="0" src="images/co.jpg" align="right" width="116" height="110">
+        			<div id="intro_example">
+                        <span class="red_text">For example</span>, you can use Windows Audio Recorder to record:
+    					<ul>
+    						<li>Audio from the Internet, either audio files or live streams.</li>
+    						<li>A conversation, if you use an Internet telephony program.</li>
+    						<li>Music from a game program.</li>
+    						<li>Edit recording files or existing audio files.</li>
+    						<li>Convert Mp3 <-> Wav.</li>
+    					</ul>
+        			</div>
+        			<div id="screenshots">
+            			<a href="images/war.gif"><IMG SRC="images/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+            			<a href="images/warp.gif"><IMG SRC="images/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+            			<a href="buynow.htm"><img border="0" src="images/purchase.gif" align="right" width="116" height="39"></a><br><br>
+        			</div>
     			</div>
-    			<img border="0" src="images/co.jpg" align="right" width="116" height="110">
-    			<div id="intro_example">
-                    <span class="red_text">For example</span>, you can use Windows Audio Recorder to record:
-					<ul>
-						<li>Audio from the Internet, either audio files or live streams.</li>
-						<li>A conversation, if you use an Internet telephony program.</li>
-						<li>Music from a game program.</li>
-						<li>Edit recording files or existing audio files.</li>
-						<li>Convert Mp3 <-> Wav.</li>
-					</ul>
+    			<div id="key_features">
+        			<div class="con_title">Key Features</div>
+    				<div>
+    					<p class="blue_text">An intelligent recorder</p>
+    					<p>
+    						When you first start Windows Audio Recorder, Windows Audio Recorder will configure your sound card automatically. Just obey the prompts carefully.
+                            Then you can record what ever you like from your sound card. You do not have to set configuration manually. This is the major difference between Windows Audio Recorder
+    						and other sound recording tools.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Real time MP3 encoding</p>
+    					<p>
+    						That means it will not occupy your memory when recording, once Windows Audio Recorder captured sound, it then encode the audio data to mp3 and write to disk directly,
+    						no temporary file production, not occupy your memory resouce.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Noise Gating Setting</p>
+    					<p>
+    						Windows Audio Recorder can detect the sound volume automaticly, once the recording volume is lower than a specified value for some time, 
+    						it then pause recording until the sound loudly once again, that means, you can get rid of the silence duration in your recording, as you like.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Built-in Sound Editor <span class="red_text">New !</span></p>
+    					<p>
+    						Now this sound recorder is not only a recorder, it is also a sound editor that allows the user to edit recording or existing audio files by 
+    						cutting, copping, pasting, trimming any duration of the sound. Also these actions are visual, and support unlimited Undo (and Redo).
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Recording management <span class="red_text">New !</span></p>
+    					<p>
+    						The Resulting File list box lets you manage your file recording easily.
+    						You can set the recording information and edit the resulting file with a simple mouse click on the list box.
+    						<span class="red_text"><a href="new.htm">Click here</a></span> to learn more.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Sampling settings </p>
+    					<p>
+    						Windows Audio Recorder supports Sampling settings. To get higher quality recording, you can set the Sample rate, Mono or Stereo, and the Sample Bit, before recording.
+    						With its powerful sound engine, Recorder produces recordings with <span class="red_text">CD quality</span>.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Audio Conversion</p>
+    					<p>
+    						Don't worry about high quality recording taking a great deal of disk space.
+    						Windows Audio Recorder can convert wave-file format into Mp3-file format, which will reduce the file size by a factor of about 10.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Recording schedule support</p>
+    					<p>
+    						Now Windows Audio Recorder supports recording schedule function. You can define all kinds of schedules for specified date, daily, weekly date, 
+    						when to start recording or when to stop recording, also define a internet live radio url to record.
+    						Windows Audio Recorder will connect the url automaticly and record the content.
+    					</p>
+    				</div>
+    				<div>
+    					<p class="blue_text">Supports Hotkeys</p>
+    					<p>
+    						There are a number of hotkeys which allow you to control the recording functions of Windows Audio Recorder while you are working in other programs.
+    					</p>
+    					<ul>
+        					<li><span class="red_text">F5</span>  - START RECORDING </li>
+        					<li><span class="red_text">F6</span>  - PAUSE / RESUME </li>
+        					<li><span class="red_text">F7</span>  - STOP </li>
+        					<li><span class="red_text">F8</span>  - PLAYBACK </li>
+    					</ul>
+    					<p>
+    						For example, you can start Windows Audio Recorder first and then run other computer programs. 
+    						It's not necessary to switch to Windows Audio Recorder to start, stop or pause a recording.
+    						This means it will not be a bother for you to switch to Windows Audio Recorder to record sound when you are enjoying music or live streams.
+    						All you need to do is to press F5 to record directly.
+    					</p>
+    				</div>
     			</div>
-    			<div id="screenshots">
-        			<a href="images/war.gif"><IMG SRC="images/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-        			<a href="images/warp.gif"><IMG SRC="images/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-        			<a href="buynow.htm"><img border="0" src="images/purchase.gif" align="right" width="116" height="39"></a><br><br>
+    			<div id="links">
+        			<div class="con_title">Links:</div>
+    				<p>
+    					<span class="blue_text"><a href="http://www.loadtrend.com/realspy/">Real Spy Monitor</a></span> - Powerful spy-monitoring-security tool, record all 
+    					your PC actions in stealth, spy on your employees at work and children or family at home
+    				</p>
     			</div>
-			</div>
-			<div id="key_features">
-    			<div class="con_title">Key Features</div>
-				<div>
-					<p class="blue_text">An intelligent recorder</p>
-					<p>
-						When you first start Windows Audio Recorder, Windows Audio Recorder will configure your sound card automatically. Just obey the prompts carefully.
-                        Then you can record what ever you like from your sound card. You do not have to set configuration manually. This is the major difference between Windows Audio Recorder
-						and other sound recording tools.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Real time MP3 encoding</p>
-					<p>
-						That means it will not occupy your memory when recording, once Windows Audio Recorder captured sound, it then encode the audio data to mp3 and write to disk directly,
-						no temporary file production, not occupy your memory resouce.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Noise Gating Setting</p>
-					<p>
-						Windows Audio Recorder can detect the sound volume automaticly, once the recording volume is lower than a specified value for some time, 
-						it then pause recording until the sound loudly once again, that means, you can get rid of the silence duration in your recording, as you like.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Built-in Sound Editor <span class="red_text">New !</span></p>
-					<p>
-						Now this sound recorder is not only a recorder, it is also a sound editor that allows the user to edit recording or existing audio files by 
-						cutting, copping, pasting, trimming any duration of the sound. Also these actions are visual, and support unlimited Undo (and Redo).
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Recording management <span class="red_text">New !</span></p>
-					<p>
-						The Resulting File list box lets you manage your file recording easily.
-						You can set the recording information and edit the resulting file with a simple mouse click on the list box.
-						<span class="red_text"><a href="new.htm">Click here</a></span> to learn more.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Sampling settings </p>
-					<p>
-						Windows Audio Recorder supports Sampling settings. To get higher quality recording, you can set the Sample rate, Mono or Stereo, and the Sample Bit, before recording.
-						With its powerful sound engine, Recorder produces recordings with <span class="red_text">CD quality</span>.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Audio Conversion</p>
-					<p>
-						Don't worry about high quality recording taking a great deal of disk space.
-						Windows Audio Recorder can convert wave-file format into Mp3-file format, which will reduce the file size by a factor of about 10.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Recording schedule support</p>
-					<p>
-						Now Windows Audio Recorder supports recording schedule function. You can define all kinds of schedules for specified date, daily, weekly date, 
-						when to start recording or when to stop recording, also define a internet live radio url to record.
-						Windows Audio Recorder will connect the url automaticly and record the content.
-					</p>
-				</div>
-				<div>
-					<p class="blue_text">Supports Hotkeys</p>
-					<p>
-						There are a number of hotkeys which allow you to control the recording functions of Windows Audio Recorder while you are working in other programs.
-					</p>
-					<ul>
-    					<li><span class="red_text">F5</span>  - START RECORDING </li>
-    					<li><span class="red_text">F6</span>  - PAUSE / RESUME </li>
-    					<li><span class="red_text">F7</span>  - STOP </li>
-    					<li><span class="red_text">F8</span>  - PLAYBACK </li>
-					</ul>
-					<p>
-						For example, you can start Windows Audio Recorder first and then run other computer programs. 
-						It's not necessary to switch to Windows Audio Recorder to start, stop or pause a recording.
-						This means it will not be a bother for you to switch to Windows Audio Recorder to record sound when you are enjoying music or live streams.
-						All you need to do is to press F5 to record directly.
-					</p>
-				</div>
-			</div>
-			<div id="links">
-    			<div class="con_title">Links:</div>
-				<p>
-					<span class="blue_text"><a href="http://www.loadtrend.com/realspy/">Real Spy Monitor</a></span> - Powerful spy-monitoring-security tool, record all 
-					your PC actions in stealth, spy on your employees at work and children or family at home
-				</p>
-			</div>
+    		</div>
 		</div>
 		<div id="footer">
 			<div id="copy_at"> &copy; 2001 - 2011 Windows Audio Recorder designed by Loadtrend, Inc., all rights reserved. </div>
