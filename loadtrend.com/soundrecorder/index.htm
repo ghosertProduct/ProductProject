@@ -1,237 +1,14 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Language" content="en-us">
 <meta name="DESCRIPTION" content="Sound recorder: Windows Audio Recorder - Capture and record audio from the Internet,audio files or live streams.">
 <meta name="KEYWORDS" content="record streaming audio,sound recording software,sound recorder software,audio recorder,vista sound recorder,record,recorder,recording,soud recorder,voice,record music,mp3 recorder,wave recorder,cd recorder">
 <title>Sound recorder: Windows Audio Recorder - Capture and record audio from the Internet, audio files or live streams.</title>
-<style>
-    /* Centering a design using auto margins. */
-    body {
-		text-align: center; /* For IE6 bug, page 135. */
-		margin: 0 auto;
-	}
 
-    #page {
-		width: 1024px;
-		/*width: 85%; This is ok either, but if the user scale window, it may be not ok.*/
-		margin: 0 auto; /* means top left here.*/
-		border: 0px;
-		text-align: left; /* For IE6 bug, page 135. */
-	}
-	
-	/* This is all about page header stuffs. */
-	#page #header {
-		border: 0px;
-		height: 100px;
-		background: #6888E0 url(images/123-1.jpg) no-repeat left top;
-		color: #fff;
-		font-family: Tahoma;
-		font-size: small;
-		font-weight: bold;
-		position: relative;
-		border-bottom: 1px solid #B1C2EF;
-	}
-	
-	#page #header #title {
-		position: absolute;
-		top: 5px;
-		right: 50px;
-	}
-	
-	#page #header #copy_at {
-		position: absolute;
-		top: 35px;
-		right: 50px;
-	}
-	
-	/* Creating a horizontal nav bar. */
-	ul#horizontal_nav {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		width: 100%; /* The horizontal nav bar is 100% width. */
-		float: left; /* Because children li below is float, witout this clause, parent ul here can not contain floated children so that hidding the list background. */
-		/*
-		background: #FAA819 url(images/left_navBg.gif) repeat-x;
-		*/
-		position: absolute;
-		bottom: 5px;
-		left: 10px;
-	}
-	ul#horizontal_nav li {
-		float: left;
-	}
-	ul#horizontal_nav a {
-		padding: 0 1em;
-		text-decoration: none;
-		color: #fff;
-	}
-	ul#horizontal_nav a:hover {
-		color: #333; /* Define the rollover state. */
-	}
-	
-	/* For float: left above. */
-	.clear {
-		clear: both;
-	}
-	
-	/* wrapper div for left_nav & content divs. */
-	#page #main_wrapper {
-		overflow:hidden; /* For two-column fixed height. */
-	}
-	
-	/* For two-column fixed height. */
-	#main_wrapper #left_nav, #main_wrapper #content {
-		margin-bottom: -10000px; 
-		padding-bottom: 10000px;
-	}
-	
-	/* This is all about left navigator. */
-	#page #left_nav {
-		width: 30%;
-		float: left;
-		background: #B1C2EF;
-	}
-	#left_nav #left_nav_head {
-		height: 40px;
-		background: #6888E0;
-	}
-	#left_nav ul {
-		margin: 0;
-		padding: 0;
-		list-style:none;
-		width: 100%; /* The horizontal nav bar is 100% width. */
-	}
-	#left_nav li {
-		/* For the HORIZONTAL, add horizontal padding to the navigation area's content not navigation itself. Or IE 5.x it's not ok.*/
-		padding-left: 20px;
-		padding-right: 20px;
-		height: 40px;
-		border-top: #B1C2EF solid 1px;
-	}
-	#left_nav li a {
-		display: block;
-		font-family: Arial;
-		font-size: medium;
-		font-weight: bold;
-		color: #000;
-		text-decoration: none;
-		line-height: 40px; /* line-height = li.height means vertical middle. */
-	}
-	#left_nav li a:hover {
-		color: #fff;
-	}
-	#left_nav li#home {
-		background: #7795E3;
-	}
-	#left_nav li#new {
-		background: #83A3E4;
-	}
-	#left_nav li#download {
-		background: #87A9EF;
-	}
-	#left_nav li#buynow {
-		background: #94B1EF;
-	}
-	#left_nav li#faq {
-		background: #98B4F0;
-	}
-	#left_nav li#contact {
-		background: #A3BBEF;
-	}
-	
-	
-	/* This is all about page content stuffs. */
-	#page #content {
-		/* The plus of width of content and left_nav equals 69% + 30% = 99% while page is 100%, so there is a 1% virtual gutter.
-		We use this method rather than horizontal margin or padding to create gutters because of IE bugs.
-		*/
-		width: 69%;
-		float: right;
-		font-family: Times New Roman;
-		font-size: medium;
-		border-right: #B1C2EF solid 2px;
-	}
-	
-	#page #content .con_title {
-		background-color: #009838;
-		color: #fff;
-		font-weight: bold;
-		line-height: 34px;
-		padding-left: 15px;
-		margin: 0;
-	}
-	
-	#page #content .red_text {
-		color: #ff0000;
-		font-weight: bold;
-	}
-	
-	#page #content .red_text a {
-		color: #ff0000;
-	}
-	
-	#page #content .blue_text {
-		color: #0000ff;
-		font-weight: bold;
-	}
-	
-	#page #content .blue_text a {
-		color: #ff0000;
-	}
-	
-	/* This is all about page footer stuffs. */
-	#page #footer {
-		clear: both;
-		background: #6888E0;
-		color: #fff;
-		font-family: Tahoma;
-		font-size: small;
-		font-weight: bold;
-		line-height: 30px;
-	}
-</style>
-
-<style type="text/css">
-	#introduce div {
-		margin: 15 0 20 0;
-	}
-	#introduce div#intro_desc {
-		margin-bottom: 0;
-	}
-	#introduce div#intro_example {
-		margin-top: 20;
-	}
-	/* Replace the default bullet image with custom one, and remove indent. */
-	#introduce div#intro_example ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none; /* Get rid of default bullet image. */
-	}
-	#introduce div#intro_example ul li {
-		background: url(images/jiantou.gif) no-repeat 0 50%;
-		padding-left: 20px;
-		margin: 15px;
-	}
-	#introduce div#screenshots {
-		margin-bottom: 0;
-	}
-	#introduce div#screenshots a {
-		margin: 0px 20px 0px 0px;
-	}
-	#key_features p {
-		margin: 5px 0 0 0;
-	}
-	#key_features div {
-		margin: 15px 0 0 0;
-	}
-	div#links {
-		margin: 15px 0 30px 0;
-	}
-</style>
-
+<link href="css/common.1.css" rel="stylesheet" type="text/css"/>
+<link href="css/index.1.css" rel="stylesheet" type="text/css"/>
 
 </head>
 
@@ -274,7 +51,7 @@
         			such as RealPlayer, Windows Media Player, Quick Time,WinAmp, and many others. The resulting files are saved in wave-file, <span class="red_text">MP3-file</span>
         			format. And it can edit audio files by cutting, copying, pasting, trimming.
         			</div>
-        			<img border="0" src="images/co.jpg" align="right" width="116" height="110">
+        			<img border="0" src="img/co.jpg" align="right" width="116" height="110">
         			<div id="intro_example">
                         <span class="red_text">For example</span>, you can use Windows Audio Recorder to record:
     					<ul>
@@ -286,9 +63,9 @@
     					</ul>
         			</div>
         			<div id="screenshots">
-            			<a href="images/war.gif"><IMG SRC="images/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-            			<a href="images/warp.gif"><IMG SRC="images/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
-            			<a href="buynow.htm"><img border="0" src="images/purchase.gif" align="right" width="116" height="39"></a><br><br>
+            			<a href="img/war.gif"><IMG SRC="img/war.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+            			<a href="img/warp.gif"><IMG SRC="img/warp.gif" WIDTH="212" HEIGHT="150" BORDER="0"></a>
+            			<a href="buynow.htm"><img border="0" src="img/purchase.gif" align="right" width="116" height="39"></a><br><br>
         			</div>
     			</div>
     			<div id="key_features">

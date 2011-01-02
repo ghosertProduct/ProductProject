@@ -1,0 +1,35 @@
+#introduce div {
+	margin: 15 0 20 0;
+}
+#introduce div#intro_desc {
+	margin-bottom: 0;
+}
+#introduce div#intro_example {
+	margin-top: 20;
+}
+/* Replace the default bullet image with custom one, and remove indent. */
+#introduce div#intro_example ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none; /* Get rid of default bullet image. */
+}
+#introduce div#intro_example ul li {
+	background: url(../img/jiantou.gif) no-repeat 0 50%;
+	padding-left: 20px;
+	margin: 15px;
+}
+#introduce div#screenshots {
+	margin-bottom: 0;
+}
+#introduce div#screenshots a {
+	margin: 0px 20px 0px 0px;
+}
+#key_features p {
+	margin: 5px 0 0 0;
+}
+#key_features div {
+	margin: 15px 0 0 0;
+}
+div#links {
+	margin: 15px 0 30px 0;
+}
