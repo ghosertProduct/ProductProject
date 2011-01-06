@@ -173,6 +173,10 @@ ul#horizontal_nav a:hover {
 	color: #0000ff;
 }
 
+#page #content .slim_blue_text {
+	color: #0000ff;
+}
+
 #page #content .black_text {
 	color: #000000;
 	font-weight: bold;
@@ -255,4 +259,29 @@ div#links {
 #free_trial_download div #download_local img {
 	margin-right: 30px;
 }
+
+/**
+ * Dedicated css for buynow page.
+ */
+
+#how_to_buy div {
+	margin: 15px 0 20px 0;
+}
+#how_to_buy div#buynow_img {
+	padding-left: 200px;
+}
+#method_1 div, #method_2 div, #method_3 div, #method_4 div, #outside_of_us div {
+	margin: 15px 0 20px 0;
+}
+#method_4 #regular_mail_adress div {
+	margin: 0;
+	padding-left: 10px;
+	line-height: 150%;
+}
+
+
+
+
+
+
 
