@@ -1,0 +1,258 @@
+/* Centering a design using auto margins. */
+body {
+	text-align: center; /* For IE6 bug, page 135. */
+	margin: 0 auto;
+}
+
+#page {
+	width: 1024px;
+	/*width: 85%; This is ok either, but if the user scale window, it may be not ok.*/
+	margin: 0 auto; /* means top left here.*/
+	border: 0px;
+	text-align: left; /* For IE6 bug, page 135. */
+}
+
+/* This is all about page header stuffs. */
+#page #header {
+	border: 0px;
+	height: 100px;
+	background: #6888E0 url(../img/123-1.jpg) no-repeat left top;
+	color: #fff;
+	font-family: Tahoma;
+	font-size: small;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 1px solid #B1C2EF;
+}
+
+#page #header #title {
+	position: absolute;
+	top: 5px;
+	right: 50px;
+}
+
+#page #header #copy_at {
+	position: absolute;
+	top: 35px;
+	right: 50px;
+}
+
+/* Creating a horizontal nav bar. */
+ul#horizontal_nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%; /* The horizontal nav bar is 100% width. */
+	float: left; /* Because children li below is float, witout this clause, parent ul here can not contain floated children so that hidding the list background. */
+	/*
+	background: #FAA819 url(../img/left_navBg.gif) repeat-x;
+	*/
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+ul#horizontal_nav li {
+	float: left;
+}
+ul#horizontal_nav a {
+	padding: 0 1em;
+	text-decoration: none;
+	color: #fff;
+}
+ul#horizontal_nav a:hover {
+	color: #333; /* Define the rollover state. */
+}
+
+/* For float: left above. */
+.clear {
+	clear: both;
+}
+
+/* wrapper div for left_nav & content divs. */
+#page #main_wrapper {
+	overflow:hidden; /* For two-column fixed height. */
+}
+
+/* For two-column fixed height. */
+#main_wrapper #left_nav, #main_wrapper #content {
+	margin-bottom: -10000px; 
+	padding-bottom: 10000px;
+}
+
+/* This is all about left navigator. */
+#page #left_nav {
+	width: 30%;
+	float: left;
+	background: #B1C2EF;
+}
+#left_nav #left_nav_head {
+	height: 40px;
+	background: #6888E0;
+}
+#left_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	width: 100%; /* The horizontal nav bar is 100% width. */
+}
+#left_nav li {
+	/* For the HORIZONTAL, add horizontal padding to the navigation area's content not navigation itself. Or IE 5.x it's not ok.*/
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 40px;
+	border-top: #B1C2EF solid 1px;
+}
+#left_nav li a {
+	display: block;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	line-height: 40px; /* line-height = li.height means vertical middle. */
+}
+#left_nav li a:hover {
+	color: #fff;
+}
+#left_nav li#home {
+	background: #7795E3;
+}
+#left_nav li#new {
+	background: #83A3E4;
+}
+#left_nav li#download {
+	background: #87A9EF;
+}
+#left_nav li#buynow {
+	background: #94B1EF;
+}
+#left_nav li#faq {
+	background: #98B4F0;
+}
+#left_nav li#contact {
+	background: #A3BBEF;
+}
+
+
+/* This is all about page content stuffs. */
+#page #content {
+	/* The plus of width of content and left_nav equals 69% + 30% = 99% while page is 100%, so there is a 1% virtual gutter.
+	We use this method rather than horizontal margin or padding to create gutters because of IE bugs.
+	*/
+	width: 69%;
+	float: right;
+	font-family: Times New Roman;
+	font-size: medium;
+	border-right: #B1C2EF solid 2px;
+}
+
+#page #content .con_title {
+	background-color: #009838;
+	color: #fff;
+	font-weight: bold;
+	line-height: 34px;
+	padding-left: 15px;
+	margin: 0;
+}
+
+#page #content .red_text {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+#page #content .red_text a {
+	color: #ff0000;
+}
+
+#page #content .blue_text {
+	color: #0000ff;
+	font-weight: bold;
+}
+
+#page #content .blue_text a {
+	color: #0000ff;
+}
+
+#page #content .black_text {
+	color: #000000;
+	font-weight: bold;
+}
+
+/* This is all about page footer stuffs. */
+#page #footer {
+	clear: both;
+	background: #6888E0;
+	color: #fff;
+	font-family: Tahoma;
+	font-size: small;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+
+/**
+ * Dedicated css for index page.
+ */
+
+#introduce div {
+	margin: 15px 0 20px 0;
+}
+#introduce div#intro_desc {
+	margin-bottom: 0;
+}
+#introduce div#intro_example {
+	margin-top: 20px;
+}
+#introduce div#intro_example div {
+	float: left;
+}
+#introduce div#intro_example img {
+	float: right;
+}
+/* Replace the default bullet image with custom one, and remove indent. */
+#introduce div#intro_example ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none; /* Get rid of default bullet image. */
+}
+#introduce div#intro_example ul li {
+	background: url(../img/jiantou.gif) no-repeat 0 50%;
+	padding-left: 20px;
+	margin: 15px;
+}
+#introduce div#screenshots {
+	margin-bottom: 0;
+}
+#introduce div#screenshots a {
+	margin: 0 20px 0 0;
+}
+#key_features p {
+	margin: 5px 0 0 0;
+}
+#key_features div {
+	margin: 15px 0 0 0;
+}
+div#links {
+	margin: 15px 0 30px 0;
+}
+
+
+/**
+ * Dedicated css for download page.
+ */
+#free_trial_download div {
+	margin: 15px 0 20px 0;
+}
+
+#free_trial_download div div.red_text {
+	padding-left: 80px;
+}
+
+#free_trial_download div #download_local {
+	padding-left: 80px;
+}
+
+#free_trial_download div #download_local img {
+	margin-right: 30px;
+}
+
