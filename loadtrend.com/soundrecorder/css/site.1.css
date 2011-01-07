@@ -263,7 +263,6 @@ div#links {
 /**
  * Dedicated css for buynow page.
  */
-
 #how_to_buy div {
 	margin: 15px 0 20px 0;
 }
@@ -279,9 +278,16 @@ div#links {
 	line-height: 150%;
 }
 
-
-
-
-
-
+/**
+ * Dedicated css for contact page.
+ */
+#contact_us div {
+	margin: 15px 0 20px 0;
+}
+#contact_us div img	{
+	float: left;
+}
+#user_comments div {
+	margin: 15px 0 20px 0;
+}
 
