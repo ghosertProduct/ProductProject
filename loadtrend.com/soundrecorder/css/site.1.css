@@ -287,6 +287,9 @@ div#links {
 #contact_us div img	{
 	float: left;
 }
+#contact_us div p {
+	padding-top: 20px;
+}
 #user_comments div {
 	margin: 15px 0 20px 0;
 }
