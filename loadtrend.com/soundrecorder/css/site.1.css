@@ -182,6 +182,13 @@ ul#horizontal_nav a:hover {
 	font-weight: bold;
 }
 
+#page #content div {
+	margin: 0 0 20px 0;
+}
+#page #content div div {
+	margin: 20px 0 0;
+}
+
 /* This is all about page footer stuffs. */
 #page #footer {
 	clear: both;
@@ -197,10 +204,6 @@ ul#horizontal_nav a:hover {
 /**
  * Dedicated css for index page.
  */
-
-#introduce div {
-	margin: 15px 0 20px 0;
-}
 #introduce div#intro_desc {
 	margin-bottom: 0;
 }
@@ -224,28 +227,19 @@ ul#horizontal_nav a:hover {
 	padding-left: 20px;
 	margin: 15px;
 }
-#introduce div#screenshots {
-	margin-bottom: 0;
-}
 #introduce div#screenshots a {
 	margin: 0 20px 0 0;
 }
 #key_features p {
 	margin: 5px 0 0 0;
 }
-#key_features div {
-	margin: 15px 0 0 0;
-}
-div#links {
-	margin: 15px 0 30px 0;
-}
 
 
 /**
  * Dedicated css for download page.
  */
-#free_trial_download div {
-	margin: 15px 0 20px 0;
+#free_trial_download {
+	height: 768px;
 }
 
 #free_trial_download div div.red_text {
@@ -263,14 +257,8 @@ div#links {
 /**
  * Dedicated css for buynow page.
  */
-#how_to_buy div {
-	margin: 15px 0 20px 0;
-}
 #how_to_buy div#buynow_img {
 	padding-left: 200px;
-}
-#method_1 div, #method_2 div, #method_3 div, #method_4 div, #outside_of_us div {
-	margin: 15px 0 20px 0;
 }
 #method_4 #regular_mail_adress div {
 	margin: 0;
@@ -281,16 +269,30 @@ div#links {
 /**
  * Dedicated css for contact page.
  */
-#contact_us div {
-	margin: 15px 0 20px 0;
-}
 #contact_us div img	{
 	float: left;
 }
 #contact_us div p {
 	padding-top: 20px;
 }
-#user_comments div {
-	margin: 15px 0 20px 0;
+
+/**
+ * Dedicated css for new page.
+ */
+#what_is_new div img {
+	float: left;
+}
+#what_is_new div p {
+	padding-top: 40px;
+}
+#support_vista div img {
+	float: left;
+	margin-right: 20px;
+}
+#support_vista div div {
+	padding-top: 20px;
+}
+#support_vista div div.clear {
+	padding-top: 0;
 }
 
