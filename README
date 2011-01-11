@@ -1,2 +1,5 @@
-This is a test.
-This is a test.
+1. Put confs for env like: nginx, uwsgi or db to ./env-conf
+2. ./deploy.sh to deploy codes & start server, if you want to test locally first:
+    1) Change local /etc/hosts and add the line like: 127.0.0.1	realrecorder.net
+	2) Open your browser to visit http://realrecorder.net to verify the results.
+	3) After deployment on production, open your browser to visit http://www.realrecorder.net to verify the resutls.
