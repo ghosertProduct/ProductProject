@@ -3,4 +3,5 @@
 3. After step 2, bind the new domains above to 50.18.56.45 and then re-config nginx.conf for virtual hosts.
 4. Check out myhosting.com (if it's availabe) to see whether the creditcard in it is new or old one.
 5. mkdir realspymonitor.net and recordsound.net in ProductProject, maybe remove realrecorder.net or soft link realrecorder.net to recordsound.net.
-6. add new sites for google analytics and google webmaster. Change the google javascript which exists in realrecorder.net now.
+6. add new sites for google analytics and google webmaster. Change the google javascript which exists in pages now, they all belongs to realrecorder.net
+After all of above, check out the links on the pages to make sure each one is pointed to new/correct one.
