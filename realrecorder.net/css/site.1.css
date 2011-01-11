@@ -227,8 +227,12 @@ ul#horizontal_nav a:hover {
 	padding-left: 20px;
 	margin: 15px;
 }
-#introduce div#screenshots a {
+#introduce div#screenshots div a {
 	margin: 0 20px 0 0;
+	float: left;
+}
+#introduce div#screenshots a {
+	float: right;
 }
 #key_features p {
 	margin: 5px 0 0 0;
@@ -239,7 +243,7 @@ ul#horizontal_nav a:hover {
  * Dedicated css for download page.
  */
 #free_trial_download {
-	height: 768px;
+	height: 700px;
 }
 
 #free_trial_download div div.red_text {
