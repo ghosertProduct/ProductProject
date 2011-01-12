@@ -1,3 +1,4 @@
+0. Add 30 days moeny-back and Purchase icon for index of realspymonitor.
 1. realrecorder.net is blocked by myhosting.com, check out whether it can be recovered, since I've registered recordsound.net, this may be not my concern...
 2. I have recordsound.net and realspymonitor.net on godaddy.com, check out the progress on verifying my identity.
 3. After step 2, bind the new domains above to 50.18.56.45 and then re-config nginx.conf for virtual hosts.

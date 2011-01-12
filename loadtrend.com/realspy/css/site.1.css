@@ -16,7 +16,7 @@ body {
 #page #header {
 	border: 0px;
 	height: 100px;
-	background: #6888E0 url(../img/123-1.jpg) no-repeat left top;
+	background: #6888E0 url(../img/rsmlog.jpg) no-repeat left top;
 	color: #fff;
 	font-family: Tahoma;
 	font-size: small;
@@ -164,6 +164,10 @@ ul#horizontal_nav a:hover {
 	color: #ff0000;
 }
 
+#page #content .slim_red_text {
+	color: #ff0000;
+}
+
 #page #content .blue_text {
 	color: #0000ff;
 	font-weight: bold;
@@ -186,7 +190,7 @@ ul#horizontal_nav a:hover {
 	margin: 0 0 20px 0;
 }
 #page #content div div {
-	margin: 20px 0 0;
+	margin: 20px 0 0 0;
 }
 
 /* This is all about page footer stuffs. */
@@ -210,12 +214,6 @@ ul#horizontal_nav a:hover {
 #introduce div#intro_example {
 	margin-top: 20px;
 }
-#introduce div#intro_example div {
-	float: left;
-}
-#introduce div#intro_example img {
-	float: right;
-}
 /* Replace the default bullet image with custom one, and remove indent. */
 #introduce div#intro_example ul {
 	margin: 0;
@@ -227,11 +225,11 @@ ul#horizontal_nav a:hover {
 	padding-left: 20px;
 	margin: 15px;
 }
-#introduce div#screenshots a {
-	margin: 0 20px 0 0;
-}
 #key_features p {
 	margin: 5px 0 0 0;
+}
+#content #key_features div div {
+	margin: 10px 0 0 0;
 }
 
 
