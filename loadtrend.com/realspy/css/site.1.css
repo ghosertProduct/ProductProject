@@ -225,6 +225,21 @@ ul#horizontal_nav a:hover {
 	padding-left: 20px;
 	margin: 15px;
 }
+#introduce div #screenshots {
+	width: 70%;
+	float: left;
+}
+#introduce div #purchase {
+	width: 30%;
+	float: right;
+}
+#introduce div #purchase div {
+	margin: 0;
+}
+#introduce div #purchase div#money-back {
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
 #key_features p {
 	margin: 5px 0 0 0;
 }
@@ -277,20 +292,27 @@ ul#horizontal_nav a:hover {
 /**
  * Dedicated css for new page.
  */
-#what_is_new div img {
+#what_is_new #new_updates {
+	position: relative;
+}
+#what_is_new #rsmxp_img {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+#content #what_is_new #new_updates div {
+	font-size: small;
+	margin-top: 0;
+}
+#content #what_is_new #new_updates div.blue_text {
+	font-size: medium;
+}
+#support_for #designed_for_img {
+	width: 15%;
 	float: left;
 }
-#what_is_new div p {
-	padding-top: 40px;
-}
-#support_vista div img {
-	float: left;
-	margin-right: 20px;
-}
-#support_vista div div {
-	padding-top: 20px;
-}
-#support_vista div div.clear {
-	padding-top: 0;
+#support_for #designed_for_desc {
+	width: 85%;
+	float: right;
 }
 
