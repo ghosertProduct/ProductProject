@@ -252,7 +252,11 @@ ul#horizontal_nav a:hover {
  * Dedicated css for download page.
  */
 #free_trial_download {
-	height: 768px;
+	height: 700px;
+}
+
+#free_trial_download #purchase_img {
+	padding-left: 140px;
 }
 
 #free_trial_download div div.red_text {
