@@ -5,7 +5,9 @@
 
 git pull
 sudo kill -QUIT `cat /usr/local/nginx/logs/nginx.pid`
-sudo rm /usr/local/nginx/html/realrecorder.net -rf
-sudo cp realrecorder.net /usr/local/nginx/html/ -r
+sudo rm /usr/local/nginx/html/recordsound.net -rf
+sudo cp recordsound.net /usr/local/nginx/html/ -r
+sudo rm /usr/local/nginx/html/realspymonitor.net -rf
+sudo cp realspymonitor.net /usr/local/nginx/html/ -r
 sudo cp env-conf/nginx.conf /usr/local/nginx/conf/
 sudo nginx
