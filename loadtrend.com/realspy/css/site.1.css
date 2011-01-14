@@ -292,6 +292,9 @@ ul#horizontal_nav a:hover {
 #contact_us div p {
 	padding-top: 20px;
 }
+#user_comments {
+	height: 510px;
+}
 
 /**
  * Dedicated css for new page.
