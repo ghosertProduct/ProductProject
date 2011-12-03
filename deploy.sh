@@ -9,5 +9,7 @@ sudo rm /usr/local/nginx/html/recordsound.net -rf
 sudo cp recordsound.net /usr/local/nginx/html/ -r
 sudo rm /usr/local/nginx/html/realspymonitor.net -rf
 sudo cp realspymonitor.net /usr/local/nginx/html/ -r
+sudo rm /usr/local/nginx/html/loadtrend.com -rf
+sudo cp loadtrend.com /usr/local/nginx/html/ -r
 sudo cp env-conf/nginx.conf /usr/local/nginx/conf/
 sudo nginx
