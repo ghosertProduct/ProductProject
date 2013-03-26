@@ -14,6 +14,7 @@
 
 	1. Fill up **Project name** as **ZuoYeProject**
 	2. Deselect **Project contents** -> **Use default**
-	3. Fill up **Project contents** -> **Directory** with the path contains **ZuoYeProject** like **~/ProductProject/zuoye/ZuoYeProject**
+	3. Fill up **Project contents** -> **Directory** with the path contains **ZuoYeProject** like:
+		**~/ProductProject/zuoye/ZuoYeProject**
 
 
